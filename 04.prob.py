@@ -8,6 +8,7 @@ try:
         sock = urllib.urlopen(url + nothing(query))
         text = sock.read()
         query = text.split()[-1]
-        print query, text
+        print query, int(query), text
 except:
+    print query, text
     print "Done?"
